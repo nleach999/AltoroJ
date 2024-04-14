@@ -1,9 +1,25 @@
 <html>
   <head>
     <title>A title</title>
+    <script type="text/javascript">
+
+      function foo(){
+        document.getElementById("div1").innerHTML = 7*6;
+        var client = new XMLHttpRequest();
+        client.open('GET', 'file:///etc/passwd');
+        client.onreadstatechange = function() {
+          document.getElementById("div2").innerHTML = client.responseText;
+        }
+        client.send();
+      }
+
+      window.onload = foo;
+    
+    </script>
   </head>
   <body>
     <iframe src=file:///etc/passwd ></iframe>
-     <div w3-include-html="file:///etc/passwd">passwd</div>
+     <div id="div1"></div>
+     <div id="div2"></div>
   </body>
 </html>
