@@ -1,6 +1,3 @@
-
-<iframe src="./test.html">
-
 # Description
 WARNING: This application contains security vulnerabilities. Run it only in a backed-up and sheltered environment (such as a VM with a recent snapshot and host-only networking) and at your own risk, escpecially if you enable some of the advanced options described below!
 
